@@ -23,6 +23,6 @@
   },
   "content_scripts": [{
     "matches": ["https://www.youtube.com/*"],
-    "js": ["js/background.js"]
+    "js": ["js/content.js"]
   }]
 }
