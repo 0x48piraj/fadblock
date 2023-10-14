@@ -1,16 +1,16 @@
 <p align="center">
-  <img src="https://github.com/0x48piraj/fadblock/assets/5800726/2ca53d58-47f9-4a7f-b049-7a95e16dc67e" alt="fadblock: A fast, lightweight, and undetectable YouTube Ads Blocker for Chrome"></img>
+  <img src="https://github.com/0x48piraj/fadblock/assets/5800726/2ca53d58-47f9-4a7f-b049-7a95e16dc67e" alt="fadblock: A fast, lightweight, and undetectable YouTube Ads Blocker for Chrome, Opera and Firefox"></img>
   <br/>
-  <sub>A fast, lightweight, and undetectable YouTube Ads Blocker for Chrome.</sub>
+  <sub>A fast, lightweight, and undetectable YouTube Ads Blocker for Chrome, Opera and Firefox.</sub>
+</p>
+
+<p align="center">
+	<a href="https://addons.mozilla.org/addon/fadblock/"><img src="https://user-images.githubusercontent.com/585534/107280546-7b9b2a00-6a26-11eb-8f9f-f95932f4bfec.png" alt="Get uBlock Origin for Firefox"></a>
+	<a href="#install"><img src="https://user-images.githubusercontent.com/585534/107280622-91a8ea80-6a26-11eb-8d07-77c548b28665.png" alt="Get uBlock Origin for Chromium"></a>
+	<a href="https://addons.opera.com/extensions/details/fadblock/"><img src="https://user-images.githubusercontent.com/585534/107280692-ac7b5f00-6a26-11eb-85c7-088926504452.png" alt="Get uBlock Origin for Opera"></a>
 </p>
 
 <h1 align="center">Friendly Adblock for YouTube</h1>
-
-<p align="center">
-  <b>Download:</b>
-  <a href="#install">Chrome/Chromium</a> |
-  <a href="https://piyushraj.org/">Website</a>
-</p>
 
 
 This was posted over reddit a few months ago, [Apparently Ad Blockers are not allowed on Youtube. Is this a new thing they've implemented?](https://www.reddit.com/r/youtube/comments/13cfdbi/apparently_ad_blockers_are_not_allowed_on_youtube/?rdt=64832) and judging by all the recent comments and posts all over [r/youtube](https://www.reddit.com/r/youtube/), this change was just rolled out on a **larger scale**.
@@ -22,7 +22,7 @@ Nevertheless, the extension's underlying logic enables it to fast-forward throug
 
 ## Install
 
-> **Note:** For those who want an easy one-click Chrome extension, for whatever reason, Google rejected the publication of the extension for bogus reasons. I have raised a complaint and trying to get it published as soon as I can.
+> **Note:** For those who want an easy one-click Chrome, Opera and Firefox extension, for whatever reason, Google rejected the publication of the extension for bogus reasons while others have pending reviews. I have raised a complaint and trying to get it published as soon as I can.
 
 This section explains on how to install the extension utilizing the _developer mode_,
 
