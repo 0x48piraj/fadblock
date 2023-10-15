@@ -1,54 +1,52 @@
-function getVideoContainer() {
-  const videoContainer = Array.from(
-    document.getElementsByClassName("html5-video-container"),
-  );
-  return videoContainer.length > 0 ? videoContainer[0] : null;
-}
-
-function getVideoWrapper() {
-  return getVideoContainer() ? getVideoContainer().parentNode : null;
-}
-
-function getVideoPlayer() {
-  return getVideoContainer() ? getVideoContainer().firstChild : null;
-}
-
-function isAdShowing() {
-  const wrapper = getVideoWrapper();
-  return wrapper !== null
-    ? wrapper !== undefined && String(wrapper.className).includes("ad-showing")
-    : null;
-}
-
-function getSkipButton() {
-  const skipAdButton = Array.from(
-    document.getElementsByClassName("ytp-ad-skip-button ytp-button"),
-  );
-  return skipAdButton.length > 0 ? skipAdButton[0] : null;
-}
-
-function waitForPlayer() {
-  if (getVideoPlayer()) {
-    hookVideoPlayer();
-  } else {
-    setTimeout(() => {
-      waitForPlayer();
-    }, 200);
+// RELOAD ALL YOUTUBE TABS WHEN THE EXTENSION IS INSTALLED OR UPDATED
+chrome.runtime.onInstalled.addListener((details) => {
+  switch (details.reason) {
+    case "install":
+      console.info("EXTENSION INSTALLED");
+      break;
+    case "update":
+      console.info("EXTENSION UPDATED");
+      break;
+    case "chrome_update":
+    case "shared_module_update":
+    default:
+      console.info("BROWSER UPDATED");
+      break;
   }
-}
 
-function hookVideoPlayer() {
-  const videoPlayer = getVideoPlayer();
-  videoPlayer.addEventListener("timeupdate", () => {
-    getSkipButton()?.click();
+  chrome.tabs.query({}, (tabs) => {
+    tabs
+      .filter((tab) => tab.url.startsWith("https://www.youtube.com/"))
+      .forEach(({ id }) => {
+        chrome.tabs.reload(id);
+      });
+  });
+});
+
+const taimuRipu = async () => {
+  await new Promise((resolve, _reject) => {
+    const videoContainer = document.getElementById("movie_player");
+
+    const setTimeoutHandler = () => {
+      const isAd = videoContainer?.classList.contains("ad-interrupting") || videoContainer?.classList.contains("ad-showing");
+      const skipLock = document.querySelector(".ytp-ad-preview-text")?.innerText;
+
+      if (isAd && skipLock) {
+        const videoPlayer = document.getElementsByClassName("video-stream")[0];
+        videoPlayer.currentTime = videoPlayer.duration - 0.1;
+        // CLICK ON THE SKIP AD BTN
+        document.querySelector(".ytp-ad-skip-button")?.click();
+      }
+
+      resolve();
+    };
+
+    // RUN IT ONLY AFTER 100 MILLISECONDS
+    setTimeout(setTimeoutHandler, 100);
   });
 
-  if (isAdShowing()) {
-    videoPlayer.currentTime = videoPlayer.duration - 1;
-    videoPlayer.pause();
-    videoPlayer.play();
-  }
-}
+  taimuRipu();
+};
 
 chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
   if (
@@ -57,7 +55,7 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
   ) {
     chrome.scripting.executeScript({
       target: { tabId: tabId },
-      function: waitForPlayer,
+      function: taimuRipu,
     });
   }
 });

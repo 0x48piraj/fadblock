@@ -19,6 +19,24 @@ This blocker is designed to monitor advertisements, automatically seek the ads a
 
 Nevertheless, the extension's underlying logic enables it to fast-forward through the ad content to its conclusion. The entire process is optimized to occur within an extremely brief timeframe, typically **<=50 milliseconds**, ensuring a smooth and uninterrupted user experience.
 
+## Features
+
+This extension effectively eliminates all categories of YouTube advertisements:
+
+**Category 1:** Ads visible on the homepage.
+
+**Category 2:** Ads overlaid atop the suggested video list.
+
+**Category 3:** Ads displayed below the video description.
+
+> Starting on April 6th, 2023, the “Overlay ads” ad format will no longer appear on YouTube to help improve the viewer experience and shift engagement to higher performing ad formats on desktop and mobile devices. Overlay ads are a legacy ad format that only served on desktop and are disruptive for viewers.
+
+**Category 4:** Skippable 5-second-must-be-watched video ads, which may be positioned at the video's start, midway, or at the end.
+
+**Category 5:** Ads similar  to Category 4, but with two consecutive video ads instead of one.
+
+**Category 6:** Inescapable 10-second video ads, which must be watched.
+
 
 ## Install
 

@@ -1,56 +1,47 @@
-function getVideoContainer() {
-  const videoContainer = Array.from(
-    document.getElementsByClassName("html5-video-container"),
-  );
-  return videoContainer.length > 0 ? videoContainer[0] : null;
-}
+const taimuRipu = async () => {
+  await new Promise((resolve, _reject) => {
+    const videoContainer = document.getElementById("movie_player");
 
-function getVideoWrapper() {
-  return getVideoContainer() ? getVideoContainer().parentNode : null;
-}
+    const setTimeoutHandler = () => {
+      const isAd = videoContainer?.classList.contains("ad-interrupting") || videoContainer?.classList.contains("ad-showing");
+      const skipLock = document.querySelector(".ytp-ad-preview-text")?.innerText;
 
-function getVideoPlayer() {
-  return getVideoContainer() ? getVideoContainer().firstChild : null;
-}
+      if (isAd && skipLock) {
+        const videoPlayer = document.getElementsByClassName("video-stream")[0];
+        videoPlayer.currentTime = videoPlayer.duration - 0.1;
+        // CLICK ON THE SKIP AD BTN
+        document.querySelector(".ytp-ad-skip-button")?.click();
+      }
 
-function isAdShowing() {
-  const wrapper = getVideoWrapper();
-  return wrapper !== null
-    ? wrapper !== undefined && String(wrapper.className).includes("ad-showing")
-    : null;
-}
+      const staticAds = [".ytd-companion-slot-renderer", ".ytd-action-companion-ad-renderer", // in-feed video ads
+                         ".ytd-watch-next-secondary-results-renderer.sparkles-light-cta", ".ytd-unlimited-offer-module-renderer", // similar components
+                         ".ytp-ad-overlay-image", ".ytp-ad-text-overlay", // deprecated overlay ads (04-06-2023)
+                         ".ytd-display-ad-renderer", ".ytd-statement-banner-renderer", // homepage ads
+                         ".ytd-banner-promo-renderer", ".ytd-video-masthead-ad-v3-renderer", ".ytd-primetime-promo-renderer" // subscribe for premium & youtube tv ads
+                        ];
 
-function getSkipButton() {
-  const skipAdButton = Array.from(
-    document.getElementsByClassName("ytp-ad-skip-button ytp-button"),
-  );
-  return skipAdButton.length > 0 ? skipAdButton[0] : null;
-}
+      staticAds.forEach((ad) => {
+          document.hideElementsBySelector(ad);
+      });
 
-function waitForPlayer() {
-  if (getVideoPlayer()) {
-    hookVideoPlayer();
-  } else {
-    setTimeout(() => {
-      waitForPlayer();
-    }, 200);
-  }
-}
+      resolve();
+    };
 
-function hookVideoPlayer() {
-  const videoPlayer = getVideoPlayer();
-  videoPlayer.addEventListener("timeupdate", () => {
-    getSkipButton()?.click();
+    // RUN IT ONLY AFTER 100 MILLISECONDS
+    setTimeout(setTimeoutHandler, 100);
   });
 
-  if (isAdShowing()) {
-    videoPlayer.currentTime = videoPlayer.duration - 1;
-    videoPlayer.pause();
-    videoPlayer.play();
-  }
-}
+  taimuRipu();
+};
 
-chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
-    console.log(message)
-    return true
-});
+
+const init = async () => {
+  Document.prototype.hideElementsBySelector = (selector) =>
+    [...document.querySelectorAll(selector)].forEach(
+      (el) => (el.style.display = "none")
+    );
+
+    taimuRipu();
+};
+
+init();
