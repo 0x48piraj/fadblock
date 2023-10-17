@@ -16,7 +16,7 @@ const taimuRipu = async () => {
       const staticAds = [".ytd-companion-slot-renderer", ".ytd-action-companion-ad-renderer", // in-feed video ads
                          ".ytd-watch-next-secondary-results-renderer.sparkles-light-cta", ".ytd-unlimited-offer-module-renderer", // similar components
                          ".ytp-ad-overlay-image", ".ytp-ad-text-overlay", // deprecated overlay ads (04-06-2023)
-                         ".ytd-display-ad-renderer", ".ytd-statement-banner-renderer", // homepage ads
+                         ".ytd-display-ad-renderer", ".ytd-statement-banner-renderer", "ytd-in-feed-ad-layout-renderer", // homepage ads
                          ".ytd-banner-promo-renderer", ".ytd-video-masthead-ad-v3-renderer", ".ytd-primetime-promo-renderer" // subscribe for premium & youtube tv ads
                         ];
 

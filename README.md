@@ -6,7 +6,7 @@
 
 <p align="center">
 	<a href="https://addons.mozilla.org/addon/fadblock/"><img src="https://user-images.githubusercontent.com/585534/107280546-7b9b2a00-6a26-11eb-8f9f-f95932f4bfec.png" alt="Get uBlock Origin for Firefox"></a>
-	<a href="#install"><img src="https://user-images.githubusercontent.com/585534/107280622-91a8ea80-6a26-11eb-8d07-77c548b28665.png" alt="Get uBlock Origin for Chromium"></a>
+	<a href="https://chrome.google.com/webstore/detail/fadblock/mdadjjfmjhfcibgfhfjbaiiljpllkbfc"><img src="https://user-images.githubusercontent.com/585534/107280622-91a8ea80-6a26-11eb-8d07-77c548b28665.png" alt="Get uBlock Origin for Chromium"></a>
 	<a href="https://addons.opera.com/extensions/details/fadblock/"><img src="https://user-images.githubusercontent.com/585534/107280692-ac7b5f00-6a26-11eb-85c7-088926504452.png" alt="Get uBlock Origin for Opera"></a>
 </p>
 
@@ -40,7 +40,7 @@ This extension effectively eliminates all categories of YouTube advertisements:
 
 ## Install
 
-> **Note:** For those who want an easy one-click Chrome, Opera and Firefox extension, for whatever reason, Google rejected the publication of the extension for bogus reasons while others have pending reviews. I have raised a complaint and trying to get it published as soon as I can.
+> **Note:** The extension is now live over the [Chrome Web Store](https://chrome.google.com/webstore/detail/fadblock/mdadjjfmjhfcibgfhfjbaiiljpllkbfc)!
 
 This section explains on how to install the extension utilizing the _developer mode_,
 
