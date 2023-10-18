@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/0x48piraj/fadblock/assets/5800726/2ca53d58-47f9-4a7f-b049-7a95e16dc67e" alt="fadblock: A fast, lightweight, and undetectable YouTube Ads Blocker for Chrome, Opera and Firefox"></img>
+  <img src="https://github.com/0x48piraj/fadblock/assets/5800726/cf39ef9f-779b-43ca-93f7-ee0bb2a93323" alt="fadblock: A fast, lightweight, and undetectable YouTube Ads Blocker for Chrome, Opera and Firefox"></img>
   <br/>
   <sub>A fast, lightweight, and undetectable YouTube Ads Blocker for Chrome, Opera and Firefox.</sub>
 </p>
@@ -37,43 +37,42 @@ This extension effectively eliminates all categories of YouTube advertisements:
 
 **Category 6:** Inescapable 10-second video ads, which must be watched.
 
+## FAQ
 
-## Install
+1. **It is not working!**
 
-> **Note:** The extension is now live over the [Chrome Web Store](https://chrome.google.com/webstore/detail/fadblock/mdadjjfmjhfcibgfhfjbaiiljpllkbfc)!
+You will have to disable other adblockers as they are getting detected **not** fadblock.
 
-This section explains on how to install the extension utilizing the _developer mode_,
+> You can also add _youtube.com_ to the exception list for domains on other adblockers (uBlock Origin, AdBlock) and then downloaded fadblock to override regular adblock being prioritized on YouTube while the conventional adblocker will work across the remainder of the Internet.
+
+2. **Chrome extension says "Read your browsing history"?**
+
+Prime example of Google being nonsensical, again. Firefox doesn't and they share the same code. (read in detail [here](https://stackoverflow.com/a/64063834))
+
+3. **Why there's no privacy policy?**
+
+There’s no privacy policy as there’s no data collection at all, not even analytical data for error reporting. Everything happens locally. No remote connections are made, nada!
+
+4. **How do I use it for my phone?**
+
+Unfortunately there’s no app or anything. You cannot install Chrome extensions on the Chrome browser on Android, but several Chromium-based third-party browsers support extensions (e.g. brave browser).
+
+> Note: You will have to leave YouTube app and watch over a browser (not very elegant, sorry)
+
+
+## Install Fadblock to Opera, Edge, and Brave
+
+This section explains on how to install the extension utilizing the _developer mode_ as well as Chromium-based browsers,
 
 <p align="center">
   <img src="https://bashvlas.com/blog/install-chrome-extension-in-developer-mode/example.gif" alt="installing chrome extension in devmode"></img>
 </p>
 
+**Opera Browser:** Go to the extensions manager page (`opera://extensions`), turn on **developer mode** and click on **Load Unpacked**.
 
-#### Step 1 - download the extension
+**Edge Browser:** Go to the extensions manager page (`edge://extensions`), turn on **developer mode** and click on **Load Unpacked**.
 
-You can goto [releases](https://github.com/0x48piraj/fadblock/releases/tag/1.1) and download [fadblock-1.1](https://github.com/0x48piraj/fadblock/releases/download/1.1/chrome-fadblock-1.1.zip).
-
-#### Step 2 - extract the contents of the zip file
-
-Right click on the downloaded zip file, then click "Extract Here".
-
-#### Step 3 - open the extension page in google chrome
-
-There are several ways todo that.
-
-* Option 1: type chrome://extensions in the url bar and press enter.
-
-* Option 2: click on the tree dots in the top right of the browser, then click "More tools" then click "Extensions".
-
-#### Step 4 - activate developer mode
-
-Turn on the switch on the top right of the page that says "Developer mode".
-
-#### Step 5 - load unpacked extension
-
-Click on the button on the top left of the page that says "Load unpacked".
-
-Then select a folder that contains the manifest.json file.
+**Brave Browser:** You can visit Chrome Web Store and download the extension (https://chrome.google.com/webstore/detail/fadblock/mdadjjfmjhfcibgfhfjbaiiljpllkbfc).
 
 
 ## Show your support
