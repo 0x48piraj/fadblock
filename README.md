@@ -10,7 +10,7 @@
 	<a href="https://addons.opera.com/extensions/details/fadblock/"><img src="https://user-images.githubusercontent.com/585534/107280692-ac7b5f00-6a26-11eb-85c7-088926504452.png" alt="Get uBlock Origin for Opera"></a>
 </p>
 
-<h1 align="center">Friendly Adblock for YouTube</h1>
+<h1 align="center">FadBlock: Friendly Adblock for Youtube™</h1>
 
 
 This was posted over reddit a few months ago, [Apparently Ad Blockers are not allowed on Youtube. Is this a new thing they've implemented?](https://www.reddit.com/r/youtube/comments/13cfdbi/apparently_ad_blockers_are_not_allowed_on_youtube/?rdt=64832) and judging by all the recent comments and posts all over [r/youtube](https://www.reddit.com/r/youtube/), this change was just rolled out on a **larger scale**.
@@ -43,7 +43,7 @@ This extension effectively eliminates all categories of YouTube advertisements:
 
 You will have to disable other adblockers as they are getting detected **not** fadblock.
 
-> You can also add _youtube.com_ to the exception list for domains on other adblockers (uBlock Origin, AdBlock) and then downloaded fadblock to override regular adblock being prioritized on YouTube while the conventional adblocker will work across the remainder of the Internet.
+> You can also add _youtube.com_ to the exception list for domains on other adblockers (uBlock Origin, AdBlock) and then download fadblock to override regular adblock being prioritized on YouTube while the conventional adblocker will work across the remainder of the Internet.
 
 2. **Chrome extension says "Read your browsing history"?**
 

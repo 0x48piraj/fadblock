@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
-  "name": "fadblock",
-  "version": "1.1",
+  "name": "FadBlock: Friendly Adblock for Youtube™",
+  "version": "1.2",
   "description": "A fast, lightweight, and undetectable YouTube Ads Blocker for Chrome.",
   "icons": {
        "16": "assets/icons/icon-16x16.png",
@@ -9,7 +9,8 @@
       "128": "assets/icons/icon-120x120.png"
   },
   "action": {
-    "default_icon": "assets/logo.png"
+    "default_icon": "assets/logo.png",
+    "default_popup": "html/popup.html"
   },
   "permissions": [
     "scripting",
