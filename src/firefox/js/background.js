@@ -30,12 +30,17 @@ const taimuRipu = async () => {
     const setTimeoutHandler = () => {
       const isAd = videoContainer?.classList.contains("ad-interrupting") || videoContainer?.classList.contains("ad-showing");
       const skipLock = document.querySelector(".ytp-ad-preview-text")?.innerText;
+      const surveyLock = document.querySelector(".ytp-ad-survey")?.length > 0;
 
       if (isAd && skipLock) {
         const videoPlayer = document.getElementsByClassName("video-stream")[0];
         videoPlayer.muted = true; // videoPlayer.volume = 0;
         videoPlayer.currentTime = videoPlayer.duration - 0.1;
+        videoPlayer.paused && videoPlayer.play()
         // CLICK ON THE SKIP AD BTN
+        document.querySelector(".ytp-ad-skip-button")?.click();
+      } else if (isAd && surveyLock) {
+        // CLICK ON THE SKIP SURVEY BTN
         document.querySelector(".ytp-ad-skip-button")?.click();
       }
 
