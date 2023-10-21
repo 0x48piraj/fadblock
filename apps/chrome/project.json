@@ -1,0 +1,89 @@
+{
+  "name": "chrome",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/chrome",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          { "command": "nx run chrome:build-extension" },
+          { "command": "nx run chrome:build-popup" }
+        ],
+        "parallel": false
+      }
+    },
+    "build-extension": {
+      "executor": "@nx/rspack:rspack",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "target": "web",
+        "outputPath": "dist/apps/chrome",
+        "main": "apps/chrome/src/main.ts",
+        "tsConfig": "apps/chrome/tsconfig.app.json",
+        "rspackConfig": "apps/chrome/rspack.config.js",
+        "assets": [
+          "apps/chrome/shared-assets",
+          "apps/chrome/assets",
+          "apps/chrome/manifest.json"
+        ]
+      },
+      "configurations": {
+        "development": {
+          "mode": "development"
+        },
+        "production": {
+          "mode": "production",
+          "optimization": true,
+          "sourceMap": false
+        }
+      }
+    },
+    "build-popup": {
+      "executor": "@nx/rspack:rspack",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "target": "web",
+        "outputPath": "dist/apps/chrome/popup",
+        "main": "apps/chrome/popup/app/main.ts",
+        "indexHtml": "apps/chrome/popup/app/index.html",
+        "tsConfig": "apps/chrome/popup/tsconfig.app.json",
+        "rspackConfig": "apps/chrome/popup/rspack.config.js",
+        "assets": ["apps/chrome/shared-assets", "apps/chrome/assets"]
+      },
+      "configurations": {
+        "development": {
+          "mode": "development"
+        },
+        "production": {
+          "mode": "production",
+          "optimization": true,
+          "sourceMap": false
+        }
+      }
+    },
+    "serve-popup": {
+      "executor": "@nx/rspack:dev-server",
+      "options": {
+        "buildTarget": "chrome:build-popup:development"
+      },
+      "configurations": {
+        "development": {},
+        "production": {
+          "buildTarget": "chrome:build-popup:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/chrome/**/*.ts"]
+      }
+    }
+  }
+}

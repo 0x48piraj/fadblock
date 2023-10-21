@@ -1,0 +1,40 @@
+#tabs {
+  width: 100%;
+  height: 72px;
+  border-bottom: 1px solid #e7e9eb;
+  background-color: #fff;
+}
+#feed-type {
+  display: table;
+  width: 90%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.type {
+  display: table-cell;
+  text-align: center;
+  width: 33%;
+  transition: opacity 0.15s cubic-bezier(0.05, 0.03, 0.35, 1);
+}
+.type:not(.type-active):hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+.type p {
+  color: #7b81a5;
+  font-size: 13px;
+  font-family: Roboto;
+  font-weight: 600;
+  margin-top: 7px;
+}
+#video-feed img {
+  width: 45px;
+  height: 30.3px;
+}
+#home-feed:not(.type-active) img {
+  margin-left: -2px;
+}
+#home-feed img {
+  margin-bottom: -3px;
+}

@@ -1,0 +1,32 @@
+{
+  "npmScope": "fadblock",
+  "targetDefaults": {
+    "lint": {
+      "inputs": [
+        "default",
+        "{workspaceRoot}/.eslintrc.json",
+        "{workspaceRoot}/.eslintignore",
+        "{workspaceRoot}/eslint.config.js"
+      ]
+    },
+    "build": {
+      "inputs": ["production", "^production"]
+    }
+  },
+  "affected": {
+    "defaultBase": "master"
+  },
+  "generators": {
+    "@nx/web:application": {
+      "style": "scss",
+      "linter": "eslint",
+      "unitTestRunner": "none",
+      "e2eTestRunner": "none"
+    }
+  },
+  "namedInputs": {
+    "default": ["{projectRoot}/**/*", "sharedGlobals"],
+    "sharedGlobals": [],
+    "production": ["default"]
+  }
+}

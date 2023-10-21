@@ -1,0 +1,89 @@
+{
+  "name": "firefox",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/firefox",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          { "command": "nx run firefox:build-extension" },
+          { "command": "nx run firefox:build-popup" }
+        ],
+        "parallel": false
+      }
+    },
+    "build-extension": {
+      "executor": "@nx/rspack:rspack",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "target": "web",
+        "outputPath": "dist/apps/firefox",
+        "main": "apps/firefox/src/main.ts",
+        "tsConfig": "apps/firefox/tsconfig.app.json",
+        "rspackConfig": "apps/firefox/rspack.config.js",
+        "assets": [
+          "apps/firefox/shared-assets",
+          "apps/firefox/assets",
+          "apps/firefox/manifest.json"
+        ]
+      },
+      "configurations": {
+        "development": {
+          "mode": "development"
+        },
+        "production": {
+          "mode": "production",
+          "optimization": true,
+          "sourceMap": false
+        }
+      }
+    },
+    "build-popup": {
+      "executor": "@nx/rspack:rspack",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "target": "web",
+        "outputPath": "dist/apps/firefox/popup",
+        "main": "apps/firefox/popup/app/main.ts",
+        "indexHtml": "apps/firefox/popup/app/index.html",
+        "tsConfig": "apps/firefox/popup/tsconfig.app.json",
+        "rspackConfig": "apps/firefox/popup/rspack.config.js",
+        "assets": ["apps/firefox/shared-assets", "apps/firefox/assets"]
+      },
+      "configurations": {
+        "development": {
+          "mode": "development"
+        },
+        "production": {
+          "mode": "production",
+          "optimization": true,
+          "sourceMap": false
+        }
+      }
+    },
+    "serve-popup": {
+      "executor": "@nx/rspack:dev-server",
+      "options": {
+        "buildTarget": "firefox:build-popup:development"
+      },
+      "configurations": {
+        "development": {},
+        "production": {
+          "buildTarget": "firefox:build-popup:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/firefox/**/*.ts"]
+      }
+    }
+  }
+}
