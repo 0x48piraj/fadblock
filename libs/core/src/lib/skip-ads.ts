@@ -11,13 +11,19 @@ export function trySkipAds() {
     videoContainer?.classList.contains('ad-showing');
   const skipLock = document.querySelector<HTMLElement>('.ytp-ad-preview-text')
     ?.innerText;
+  const adSurvey = document.querySelector<HTMLFormElement>('.ytp-ad-survey');
+  const surveyLock = adSurvey && adSurvey.length > 0;
 
   if (isAd && skipLock) {
     const videoPlayer =
       document.querySelector<HTMLVideoElement>('.video-stream')!;
     videoPlayer.muted = true; // videoPlayer.volume = 0;
     videoPlayer.currentTime = videoPlayer.duration - 0.1;
+    videoPlayer.paused && videoPlayer.play();
     // CLICK ON THE SKIP AD BTN
+    document.querySelector<HTMLElement>('.ytp-ad-skip-button')?.click();
+  } else if (isAd && surveyLock) {
+    // CLICK ON THE SKIP SURVEY BTN
     document.querySelector<HTMLElement>('.ytp-ad-skip-button')?.click();
   }
 
