@@ -1,0 +1,27 @@
+@import 'jquery-ui/dist/themes/base/jquery-ui.css';
+@import 'jquery-nice-select/css/nice-select.css';
+
+body,
+html {
+  overflow: hidden;
+  margin: 0px;
+  width: 314px;
+  height: 510px;
+  background-color: #fff;
+}
+
+a:link {
+  color: #cc181e;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: #da585c;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: #d6464a;
+  background-color: transparent;
+  text-decoration: underline;
+}

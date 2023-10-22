@@ -12,7 +12,6 @@
 
 <h1 align="center">FadBlock: Friendly Adblock for Youtube™</h1>
 
-
 This was posted over reddit a few months ago, [Apparently Ad Blockers are not allowed on Youtube. Is this a new thing they've implemented?](https://www.reddit.com/r/youtube/comments/13cfdbi/apparently_ad_blockers_are_not_allowed_on_youtube/?rdt=64832) and judging by all the recent comments and posts all over [r/youtube](https://www.reddit.com/r/youtube/), this change was just rolled out on a **larger scale**.
 
 This blocker is designed to monitor advertisements, automatically seek the ads and skip them. It's important to note that this doesn't classify as traditional ad blocking, as the ad content is technically "loaded".
@@ -33,7 +32,7 @@ This extension effectively eliminates all categories of YouTube advertisements:
 
 **Category 4:** Skippable 5-second-must-be-watched video ads, which may be positioned at the video's start, midway, or at the end.
 
-**Category 5:** Ads similar  to Category 4, but with two consecutive video ads instead of one.
+**Category 5:** Ads similar to Category 4, but with two consecutive video ads instead of one.
 
 **Category 6:** Inescapable 10-second video ads, which must be watched.
 
@@ -59,7 +58,6 @@ Unfortunately there’s no app or anything. You cannot install Chrome extensions
 
 > Note: You will have to leave YouTube app and watch over a browser (not very elegant, sorry)
 
-
 ## Install Fadblock to Opera, Edge, and Brave
 
 This section explains on how to install the extension utilizing the _developer mode_ as well as Chromium-based browsers,
@@ -74,12 +72,21 @@ This section explains on how to install the extension utilizing the _developer m
 
 **Brave Browser:** You can visit Chrome Web Store and download the extension (https://chrome.google.com/webstore/detail/fadblock/mdadjjfmjhfcibgfhfjbaiiljpllkbfc).
 
+## Building extensions
+
+To build extensions:
+
+1. Install required dependencies using `npm install`
+2. Build extension you want
+   - for Chrome `npx nx build chrome`
+   - for Firefox `npx nx build firefox`
+   - for Opera `npx nx build opera`
+3. Build artifacts will be stored in `dist/apps` folder under specific browser name
 
 ## Show your support
 
-* Follow me on GitHub [@0x48piraj](https://github.com/0x48piraj) for updates.
-* I do not ask for donations, all I ask is that you star (⭐) this repository.
-
+- Follow me on GitHub [@0x48piraj](https://github.com/0x48piraj) for updates.
+- I do not ask for donations, all I ask is that you star (⭐) this repository.
 
 ## Disclaimer
 
