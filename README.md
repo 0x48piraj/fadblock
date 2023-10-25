@@ -74,6 +74,13 @@ This section explains on how to install the extension utilizing the _developer m
 
 **Brave Browser:** You can visit Chrome Web Store and download the extension (https://chrome.google.com/webstore/detail/fadblock/mdadjjfmjhfcibgfhfjbaiiljpllkbfc).
 
+## Install Fadblock to Safari on macOS
+
+1. Download the `Userscripts` from the [App Store](https://apps.apple.com/us/app/userscripts/id1463298887) (itms-apps://itunes.apple.com/app/id1463298887)
+
+2. To open `Userscripts` and enable Safari extensions settings, open `Userscripts` ( userscriptsurlscheme:// ), then select the checkbox next to `Userscripts`.
+
+3. Click on the `Userscripts` icon at the top of Safari to open the script editor and create a new JS file. Then, copy the code from [here](src/safari/js/content.js) and paste it into the newly created JS file.
 
 ## Show your support
 
