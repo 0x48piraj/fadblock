@@ -41,7 +41,17 @@ This extension effectively eliminates all categories of YouTube advertisements:
 
 1. **It is not working!**
 
-You will have to disable other adblockers as they are getting detected **not** fadblock.
+You will have to disable other adblockers as they may be getting detected.
+
+Some of the extensions that does not and do work with fadblock are listed down below,
+
+| Name of the extension    | Conflicting |
+|--------------------------|-------------|
+| uBlock Origin            | ✔️           |
+| Enhancer For Youtube     | ✔️           |
+| SponsorBlock for YouTube | ❌           |
+| Return YouTube Dislike   | ❌           |
+| TODO                     | ➖           |
 
 > You can also add _youtube.com_ to the exception list for domains on other adblockers (uBlock Origin, AdBlock) and then download fadblock to override regular adblock being prioritized on YouTube while the conventional adblocker will work across the remainder of the Internet.
 
@@ -60,7 +70,7 @@ Unfortunately there’s no app or anything. You cannot install Chrome extensions
 > Note: You will have to leave YouTube app and watch over a browser (not very elegant, sorry)
 
 
-## Install Fadblock to Opera, Edge, and Brave
+## Install FadBlock to Opera, Edge, Brave and Safari
 
 This section explains on how to install the extension utilizing the _developer mode_ as well as Chromium-based browsers,
 
@@ -68,19 +78,21 @@ This section explains on how to install the extension utilizing the _developer m
   <img src="https://bashvlas.com/blog/install-chrome-extension-in-developer-mode/example.gif" alt="installing chrome extension in devmode"></img>
 </p>
 
-**Opera Browser:** Go to the extensions manager page (`opera://extensions`), turn on **developer mode** and click on **Load Unpacked**.
+### Opera & Edge
 
-**Edge Browser:** Go to the extensions manager page (`edge://extensions`), turn on **developer mode** and click on **Load Unpacked**.
+Go to the extensions manager page for Opera (`opera://extensions`) or Edge (`edge://extensions`), turn on **developer mode** and click on **Load Unpacked**.
 
-**Brave Browser:** You can visit Chrome Web Store and download the extension (https://chrome.google.com/webstore/detail/fadblock/mdadjjfmjhfcibgfhfjbaiiljpllkbfc).
+### Brave Browser
 
-## Install Fadblock to Safari on macOS
+You can visit Chrome Web Store and download the extension (https://chrome.google.com/webstore/detail/fadblock/mdadjjfmjhfcibgfhfjbaiiljpllkbfc).
 
-1. Download the `Userscripts` from the [App Store](https://apps.apple.com/us/app/userscripts/id1463298887) (itms-apps://itunes.apple.com/app/id1463298887)
+### Install over Safari on macOS
 
-2. To open `Userscripts` and enable Safari extensions settings, open `Userscripts` ( userscriptsurlscheme:// ), then select the checkbox next to `Userscripts`.
+1. Download the **Userscripts** from the [App Store](https://apps.apple.com/us/app/userscripts/id1463298887)
 
-3. Click on the `Userscripts` icon at the top of Safari to open the script editor and create a new JS file. Then, copy the code from [here](src/safari/js/content.js) and paste it into the newly created JS file.
+2. To open **Userscripts** and enable Safari extensions settings, open **Userscripts** (`userscriptsurlscheme://`), then select the checkbox next to **Userscripts**.
+
+3. Click on the **Userscripts** icon at the top of Safari to open the script editor and create a new JS file. Then, copy the code from [here](src/safari/js/content.js) and paste it into the newly created JS file.
 
 ## Show your support
 
