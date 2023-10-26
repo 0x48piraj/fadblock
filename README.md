@@ -41,19 +41,23 @@ This extension effectively eliminates all categories of YouTube advertisements:
 
 1. **It is not working!**
 
-You will have to disable other adblockers as they may be getting detected.
+You will have to **disable other adblockers as they are getting detected**. It's not due to FadBlock as the technique it uses is completely different than other adblockers. It's hacky but it works and Google can't do jack _(for the most part)_.
 
 Some of the extensions that does not and do work with fadblock are listed down below,
 
-| Name of the extension    | Conflicting |
-|--------------------------|-------------|
-| uBlock Origin            | ✔️           |
-| Enhancer For Youtube     | ✔️           |
-| SponsorBlock for YouTube | ❌           |
-| Return YouTube Dislike   | ❌           |
-| TODO                     | ➖           |
+| Name of the extension    | Getting detected |
+|--------------------------|------------------|
+| uBlock Origin            | ✔️               |
+| Enhancer For Youtube     | ✔️               |
+| SponsorBlock for YouTube | ❌ _(probably)_  |
+| Return YouTube Dislike   | ❌               |
+| Malwarebytes extension   | ✔️               |
+| Brave in-built adblock   | ✔️               |
+| Firefox in-built adblock | ✔️               |
 
-> You can also add _youtube.com_ to the exception list for domains on other adblockers (uBlock Origin, AdBlock) and then download fadblock to override regular adblock being prioritized on YouTube while the conventional adblocker will work across the remainder of the Internet.
+> You can also add _youtube.com_ to the exception list for domains on other adblockers (uBlock Origin, AdBlock) and then download FadBlock to override regular adblock being prioritized on YouTube while the conventional adblocker will work across the remainder of the Internet.
+
+**Note:** If you're still getting the YouTube's Adblock warning, look at your extensions, disable extensions one-by-one until you find your culprit. If you still can't find it, change your browser to Chrome (as it has no in-built adblocker) and test again. If it still doesn't work, then and only then create an [issue](https://github.com/0x48piraj/fadblock/issues).
 
 2. **Chrome extension says "Read your browsing history"?**
 
