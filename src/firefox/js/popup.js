@@ -13,7 +13,7 @@ $(document).ready(function(){
           $("#suggested-feed").find("img").attr("src", "../assets/popup/suggested-feed-active.svg");
         } else {
           $("#home-feed").addClass("type-active");
-          $("#home-feed").find("img").attr("src", "../assets/popup/home-feed.svg");
+          $("#home-feed").find("img").attr("src", "../assets/popup/home-feed-active.svg");
         }
       }
     });

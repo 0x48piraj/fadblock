@@ -14,17 +14,21 @@ const taimuRipu = async () => {
         videoPlayer.paused && videoPlayer.play()
         // CLICK ON THE SKIP AD BTN
         document.querySelector(".ytp-ad-skip-button")?.click();
+        document.querySelector(".ytp-ad-skip-button-modern")?.click();
       } else if (isAd && surveyLock) {
         // CLICK ON THE SKIP SURVEY BTN
         document.querySelector(".ytp-ad-skip-button")?.click();
+        document.querySelector(".ytp-ad-skip-button-modern")?.click();
       }
 
       const staticAds = [".ytd-companion-slot-renderer", ".ytd-action-companion-ad-renderer", // in-feed video ads
-                         ".ytd-watch-next-secondary-results-renderer.sparkles-light-cta", ".ytd-unlimited-offer-module-renderer", // similar components
-                         ".ytp-ad-overlay-image", ".ytp-ad-text-overlay", // deprecated overlay ads (04-06-2023)
-                         ".ytd-display-ad-renderer", ".ytd-statement-banner-renderer", ".ytd-in-feed-ad-layout-renderer", // homepage ads
-                         ".ytd-banner-promo-renderer", ".ytd-video-masthead-ad-v3-renderer", ".ytd-primetime-promo-renderer" // subscribe for premium & youtube tv ads
-                        ];
+                           ".ytd-watch-next-secondary-results-renderer.sparkles-light-cta", ".ytd-unlimited-offer-module-renderer", // similar components
+                           ".ytp-ad-overlay-image", ".ytp-ad-text-overlay", // deprecated overlay ads (04-06-2023)
+                           "div#root.style-scope.ytd-display-ad-renderer.yt-simple-endpoint", "div#sparkles-container.style-scope.ytd-promoted-sparkles-web-renderer",
+                           ".ytd-display-ad-renderer", ".ytd-statement-banner-renderer", ".ytd-in-feed-ad-layout-renderer", // homepage ads
+                           "div#player-ads.style-scope.ytd-watch-flexy, div#panels.style-scope.ytd-watch-flexy", // sponsors
+                           ".ytd-banner-promo-renderer", ".ytd-video-masthead-ad-v3-renderer", ".ytd-primetime-promo-renderer" // subscribe for premium & youtube tv ads
+                          ];
 
       staticAds.forEach((ad) => {
           document.hideElementsBySelector(ad);

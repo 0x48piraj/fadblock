@@ -84,7 +84,7 @@ Go to the extensions manager page for Opera (`opera://extensions`) or Edge (`edg
 
 ### Brave Browser
 
-You can visit Chrome Web Store and download the extension (https://chrome.google.com/webstore/detail/fadblock/mdadjjfmjhfcibgfhfjbaiiljpllkbfc).
+You can visit Chrome Web Store and download the [extension](https://chrome.google.com/webstore/detail/fadblock/mdadjjfmjhfcibgfhfjbaiiljpllkbfc).
 
 ### Install over Safari on macOS
 
@@ -92,7 +92,7 @@ You can visit Chrome Web Store and download the extension (https://chrome.google
 
 2. To open **Userscripts** and enable Safari extensions settings, open **Userscripts** (`userscriptsurlscheme://`), then select the checkbox next to **Userscripts**.
 
-3. Click on the **Userscripts** icon at the top of Safari to open the script editor and create a new JS file. Then, copy the code from [here](src/safari/js/content.js) and paste it into the newly created JS file.
+3. Click on the **Userscripts** icon at the top of Safari to open the script editor and create a new JS file. Then, copy the code from [fadblock.user.js](src/safari/js/fadblock.user.js) and paste it into the newly created JS file.
 
 ## Show your support
 

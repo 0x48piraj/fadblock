@@ -1,8 +1,15 @@
-// RELOAD ALL YOUTUBE TABS WHEN THE EXTENSION IS INSTALLED OR UPDATED
+// RELOAD ALL YOUTUBE TABS WHEN THE EXTENSION IS FIRST INSTALLED, DO NOTHING ON UPDATED
 browser.runtime.onInstalled.addListener((details) => {
   switch (details.reason) {
     case "install":
       console.info("EXTENSION INSTALLED");
+      browser.tabs.query({}, (tabs) => {
+        tabs
+          .filter((tab) => tab.url.startsWith("https://www.youtube.com/"))
+          .forEach(({ id }) => {
+            browser.tabs.reload(id);
+          });
+      });
       break;
     case "update":
       console.info("EXTENSION UPDATED");
@@ -13,14 +20,6 @@ browser.runtime.onInstalled.addListener((details) => {
       console.info("BROWSER UPDATED");
       break;
   }
-
-  browser.tabs.query({}, (tabs) => {
-    tabs
-      .filter((tab) => tab.url.startsWith("https://www.youtube.com/"))
-      .forEach(({ id }) => {
-        browser.tabs.reload(id);
-      });
-  });
 });
 
 const taimuRipu = async () => {
@@ -39,9 +38,11 @@ const taimuRipu = async () => {
         videoPlayer.paused && videoPlayer.play()
         // CLICK ON THE SKIP AD BTN
         document.querySelector(".ytp-ad-skip-button")?.click();
+        document.querySelector(".ytp-ad-skip-button-modern")?.click();
       } else if (isAd && surveyLock) {
         // CLICK ON THE SKIP SURVEY BTN
         document.querySelector(".ytp-ad-skip-button")?.click();
+        document.querySelector(".ytp-ad-skip-button-modern")?.click();
       }
 
       resolve();
