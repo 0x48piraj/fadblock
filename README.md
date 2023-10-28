@@ -7,7 +7,7 @@
 <p align="center">
 	<a href="https://addons.mozilla.org/addon/fadblock/"><img src="https://user-images.githubusercontent.com/585534/107280546-7b9b2a00-6a26-11eb-8f9f-f95932f4bfec.png" alt="Get uBlock Origin for Firefox"></a>
 	<a href="https://chrome.google.com/webstore/detail/fadblock/mdadjjfmjhfcibgfhfjbaiiljpllkbfc"><img src="https://user-images.githubusercontent.com/585534/107280622-91a8ea80-6a26-11eb-8d07-77c548b28665.png" alt="Get uBlock Origin for Chromium"></a>
-	<a href="https://addons.opera.com/extensions/details/fadblock/"><img src="https://user-images.githubusercontent.com/585534/107280692-ac7b5f00-6a26-11eb-85c7-088926504452.png" alt="Get uBlock Origin for Opera"></a>
+	<a href="#opera--edge"><img src="https://user-images.githubusercontent.com/585534/107280692-ac7b5f00-6a26-11eb-85c7-088926504452.png" alt="Get uBlock Origin for Opera"></a>
 </p>
 
 <h1 align="center">FadBlock: Friendly Adblock for Youtube™</h1>
@@ -17,7 +17,17 @@ This was posted over reddit a few months ago, [Apparently Ad Blockers are not al
 
 This blocker is designed to monitor advertisements, automatically seek the ads and skip them. It's important to note that this doesn't classify as traditional ad blocking, as the ad content is technically "loaded".
 
-Nevertheless, the extension's underlying logic enables it to fast-forward through the ad content to its conclusion. The entire process is optimized to occur within an extremely brief timeframe, typically **<=50 milliseconds**, ensuring a smooth and uninterrupted user experience.
+Nevertheless, the extension's underlying logic enables it to fast-forward through the ad content to its conclusion. The entire process is optimized to occur within an extremely brief timeframe, typically **<=100 milliseconds**, ensuring a smooth and uninterrupted user experience.
+
+### MAJOR ANNOUNCEMENT :mega::mega::mega:
+
+*Faster, smoother and better than ever!*
+
+The upcoming version will utilize a custom `MutationObserver` with polyfill to ensure **compatibility with older browsers**. This was the initial reason for not implementing `MO` from the start.
+
+The next version will expand onto **YouTube Music** :tada:, will have a **blocked-ads counter** while including other niche features as well as proposed bugfixes :rocket:.
+
+As this project has demanded a substantial amount of time, the repository will transition to an _open-core model for ongoing maintenance and updates_ :sparkles:.
 
 ## Features
 
