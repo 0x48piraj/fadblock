@@ -25,9 +25,13 @@ Nevertheless, the extension's underlying logic enables it to fast-forward throug
 
 The upcoming version will utilize a custom `MutationObserver` with polyfill to ensure **compatibility with older browsers**. This was the initial reason for not implementing `MO` from the start.
 
-The next version will expand onto **YouTube Music** :tada:, will have a **blocked-ads counter** while including other niche features as well as proposed bugfixes :rocket:.
+The next version will expand onto **YouTube Music** :tada:, will have a **"Blocked Ads" Counter** while including other niche features as well as proposed bugfixes :rocket:.
 
-As this project has demanded a substantial amount of time, the repository will transition to an _open-core model for ongoing maintenance and updates_ :sparkles:.
+As this project has demanded a substantial amount of time, the repository will transition to an _open-core model for ongoing maintenance and updates_.
+
+**Note:** Some people are getting confused about the new permissions as well as the access to `extensionpay.com`. The storage permission is for counting the "Blocked YouTube Ads" and ExtensionPay is a payment processor integrated with [Stripe](https://stripe.com/en-in) for obtaining a lifetime license after an initial free trial period.
+
+> I genuinely hope you all can appreciate the immense amount of time and effort it requires to sustain a project like this all the while YouTube keeps changing the rules, trying to shut-out everything. All this coupled with working >80 hours/week on my own thing (not FadBlock). If you're not satisfied with the decision where you have to pay a one-time contribution as a gesture for "_job well done and keep at it_", you still have the option to manually roll back to version 1.3. I won't remove it; it just won't receive further updates. I believe that's a fair compromise.
 
 ## Features
 
@@ -110,8 +114,8 @@ You can visit Chrome Web Store and download the [extension](https://chrome.googl
 
 ## Show your support
 
-* Follow me on GitHub [@0x48piraj](https://github.com/0x48piraj) for updates.
-* I do not ask for donations, all I ask is that you star (⭐) this repository.
+* Think about making a tiny one-time contribution to keep enjoying FadBlock with extended support.
+* Star (⭐) this repository and consider following me on [GitHub](https://github.com/0x48piraj) if you're using the **free** version.
 
 
 ## Disclaimer
