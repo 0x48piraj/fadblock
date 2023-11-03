@@ -33,6 +33,29 @@ As this project has demanded a substantial amount of time, the repository will t
 
 > I genuinely hope you all can appreciate the immense amount of time and effort it requires to sustain a project like this all the while YouTube keeps changing the rules, trying to shut-out everything. All this coupled with working >80 hours/week on my own thing (not FadBlock). If you're not satisfied with the decision where you have to pay a one-time contribution as a gesture for "_job well done and keep at it_", you still have the option to manually roll back to version 1.3. I won't remove it; it just won't receive further updates. I believe that's a fair compromise.
 
+## Coverage
+
+- [This special YouTube Adblocker skips ads instead of blocking them](https://ghacks.net/2023/10/28/this-special-youtube-adblocker-skips-ads-instead-of-blocking-them/) [[Archive](https://web.archive.org/web/20231103064810/https://ghacks.net/2023/10/28/this-special-youtube-adblocker-skips-ads-instead-of-blocking-them/)/[Snapshot](https://web.archive.org/web/20231103064822/http://web.archive.org/screenshot/https://ghacks.net/2023/10/28/this-special-youtube-adblocker-skips-ads-instead-of-blocking-them/)]
+
+- [Fadblock: The Sneaky Trickster of YouTube Ad Skipping and YouTube Fast-Forwarding](https://innov8tiv.com/fadblock-the-sneaky-trickster-of-youtube-ad-skipping-and-youtube-fast-forwarding/) [[Archive](https://web.archive.org/web/20231103064518/https://innov8tiv.com/fadblock-the-sneaky-trickster-of-youtube-ad-skipping-and-youtube-fast-forwarding/)/[Snapshot](https://web.archive.org/web/20231103064518/http://web.archive.org/screenshot/https://innov8tiv.com/fadblock-the-sneaky-trickster-of-youtube-ad-skipping-and-youtube-fast-forwarding/)]
+
+- [A fast, lightweight, and undetectable YouTube Ads Blocker for Chrome. : youtube](https://www.reddit.com/r/youtube/comments/177ijjb/a_fast_lightweight_and_undetectable_youtube_ads/) [[Archive](https://archive.ph/2023.10.21-121632/https://www.reddit.com/r/youtube/comments/177ijjb/a_fast_lightweight_and_undetectable_youtube_ads/)]
+
+- [Fadblock YouTube Adblocker Speeds Through Ads Instead of Blocking](https://thetechhacker.com/2023/10/30/fadblock-youtube-adblocker-speeds-through-ads-instead-of-blocking/) [[Archive](https://web.archive.org/web/20231103065339/https://thetechhacker.com/2023/10/30/fadblock-youtube-adblocker-speeds-through-ads-instead-of-blocking/)/[Snapshot](https://web.archive.org/web/20231103065339/http://web.archive.org/screenshot/https://thetechhacker.com/2023/10/30/fadblock-youtube-adblocker-speeds-through-ads-instead-of-blocking/)]
+
+- [Undetectable ad blocker 'FadBlock' that can be used on YouTube, which takes full-scale ad blocker blocking
+](https://gigazine.net/gsc_news/en/20231102-youtube-ads-blocker-fadblock/) [[Archive](https://web.archive.org/web/20231103065818/https://gigazine.net/gsc_news/en/20231102-youtube-ads-blocker-fadblock/)/[Snapshot](https://web.archive.org/web/20231103065818/http://web.archive.org/screenshot/https://gigazine.net/gsc_news/en/20231102-youtube-ads-blocker-fadblock/)]
+
+- [FadBlock: the adblocker for YouTube that isn't an adblocker](https://en.iguru.gr/fadblock-adblocker-gia-youtube-pou-den-einai-adblocker/) [[Archive](https://web.archive.org/web/20231103065657/https://en.iguru.gr/fadblock-adblocker-gia-youtube-pou-den-einai-adblocker/)/[Snapshot](https://web.archive.org/web/20231103065657/http://web.archive.org/screenshot/https://en.iguru.gr/fadblock-adblocker-gia-youtube-pou-den-einai-adblocker/)]
+
+- [FadBlock: Youtube χωρίς διαφημίσεις απίστευτα εύκολα](https://techmaniacs.gr/fadblock-enas-diaforetikos-ad-blocker-gia-tis-diafimiseis-sto-youtube/) [[Archive](https://web.archive.org/web/20231103065532/https://techmaniacs.gr/fadblock-enas-diaforetikos-ad-blocker-gia-tis-diafimiseis-sto-youtube/)/[Snapshot](https://web.archive.org/web/20231103065532/http://web.archive.org/screenshot/https://techmaniacs.gr/fadblock-enas-diaforetikos-ad-blocker-gia-tis-diafimiseis-sto-youtube/)]
+
+- [FADBLOCK: L’ESTENSIONE CHE SALTA LE PUBBLICITÀ DI YOUTUBE ANZICHÉ BLOCCARLE](https://www.drcommodore.it/2023/10/31/fadblock-estensione-chrome-youtube/) [[Archive](https://web.archive.org/web/20231103065204/https://www.drcommodore.it/2023/10/31/fadblock-estensione-chrome-youtube/)/[Snapshot](https://web.archive.org/web/20231103065204/http://web.archive.org/screenshot/https://www.drcommodore.it/2023/10/31/fadblock-estensione-chrome-youtube/)]
+
+- [Fadblock: el adblock para YouTube que salta los anuncios en 50 milisegundos](https://blog.elhacker.net/2023/10/fadblock-adblock-para-youtube-salta-anuncios-sin-bloquear.html) [[Archive](https://web.archive.org/web/20231103064154/https://blog.elhacker.net/2023/10/fadblock-adblock-para-youtube-salta-anuncios-sin-bloquear.html)/[Snapshot](https://web.archive.org/web/20231103064154/http://web.archive.org/screenshot/https://blog.elhacker.net/2023/10/fadblock-adblock-para-youtube-salta-anuncios-sin-bloquear.html)]
+
+- [广告加速器代替Adblock！YouTube和创作者均获得收益！](https://www.youtube.com/watch?v=OyAU1tr5qJE) [[Archive](https://web.archive.org/web/20231103063741/https://www.youtube.com/watch?v=OyAU1tr5qJE)/[Snapshot](https://web.archive.org/web/20231103063741/http://web.archive.org/screenshot/https://www.youtube.com/watch?v=OyAU1tr5qJE)]
+
 ## Features
 
 This extension effectively eliminates all categories of YouTube advertisements:
