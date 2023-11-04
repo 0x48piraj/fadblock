@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        fadblock-for-safari
 // @description This is your new file, start writing code
-// @match       https://www.youtube.com/*
+// @match       *://*.youtube.com/*
 // ==/UserScript==
 
 // Source: https://raw.githubusercontent.com/0x48piraj/fadblock/master/src/chrome/js/content.js

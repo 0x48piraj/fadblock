@@ -29,7 +29,7 @@ The next version will expand onto **YouTube Music** :tada:, will have a **"Block
 
 As this project has demanded a substantial amount of time, the repository will transition to an _open-core model for ongoing maintenance and updates_.
 
-**Note:** Some people are getting confused about the new permissions as well as the access to `extensionpay.com`. The storage permission is for counting the "Blocked YouTube Ads" and ExtensionPay is a payment processor integrated with [Stripe](https://stripe.com/en-in) for obtaining a lifetime license after an initial free trial period.
+**Note:** Some people are getting confused about the new permissions as well as the access to `extensionpay.com`. The storage permission is for counting the "Blocked YouTube Ads" and ExtensionPay is a payment processor integrated with [Stripe](https://stripe.com/en-in) for obtaining a lifetime license after an initial free trial period (it's gonna stay free after as well but will ask for a contribution every now and then).
 
 > I genuinely hope you all can appreciate the immense amount of time and effort it requires to sustain a project like this all the while YouTube keeps changing the rules, trying to shut-out everything. All this coupled with working >80 hours/week on my own thing (not FadBlock). If you're not satisfied with the decision where you have to pay a one-time contribution as a gesture for "_job well done and keep at it_", you still have the option to manually roll back to version 1.3. I won't remove it; it just won't receive further updates. I believe that's a fair compromise.
 
