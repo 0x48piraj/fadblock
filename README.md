@@ -135,11 +135,6 @@ You can visit Chrome Web Store and download the [extension](https://chrome.googl
 
 3. Click on the **Userscripts** icon at the top of Safari to open the script editor and create a new JS file. Then, copy the code from [fadblock.user.js](src/safari/js/fadblock.user.js) and paste it into the newly created JS file.
 
-### Firefox
-You can visit [Firefox Add-Ons Store](https://addons.mozilla.org/en-CA/firefox/addon/fadblock/) to download and install the release version. \
-OR \
-In firefox debugging page (`about:debugging`), go to **This Firefox** tab and click on **Load Temporary Add-on** to install the development version.
-
 ## Show your support
 
 * Think about making a tiny one-time contribution to keep enjoying FadBlock with extended support.
