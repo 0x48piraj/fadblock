@@ -27,20 +27,17 @@ const taimuRipu = async () => {
 
     const setTimeoutHandler = () => 
     {
-      const videoContainer = document.getElementById("movie_player");
+      const videoContainer = document.getElementById("movie_player"); //Since the DOM can change - it is better to not cache the movie_player DOM element.
       const isAd = videoContainer?.classList.contains("ad-interrupting") || videoContainer?.classList.contains("ad-showing");
-      const skipLock = document.querySelector(".ytp-ad-preview-text")?.innerText;
-      const surveyLock = document.querySelector(".ytp-ad-survey")?.length > 0;
-
-      if (isAd) {
-        const videoPlayer = document.querySelector(".video-stream");
+      //Those 2 if statement with "skiplock" and "surveylock" are wrong. They are good for normal ads, but not for static ads.
+      const videoPlayer = document.querySelector(".video-stream"); // document.querySelector(".video_stream") is faster in this case, then document.getElementsByClassName("video_stream")[0]
+      if (isAd && videoPlayer) { 
         videoPlayer.muted = true; // videoPlayer.volume = 0;
         videoPlayer.currentTime = videoPlayer.duration - 0.1;
         videoPlayer.paused && videoPlayer.play()
         document.querySelector(".ytp-ad-skip-button")?.click();
         document.querySelector(".ytp-ad-skip-button-modern")?.click();
       } 
-
       resolve();
     };
 
@@ -50,24 +47,7 @@ const taimuRipu = async () => {
 
   taimuRipu();
 };
-const setTimeoutHandler = () => {
-  const videoContainer = document.getElementById("ytp-ad-overlay");
-  const isAd = videoContainer?.classList.contains("ad-interrupting") || videoContainer?.classList.contains("ad-showing");
-  const skipLock = document.querySelector(".ytp-ad-preview-text")?.innerText;
-  const surveyLock = document.querySelector(".ytp-ad-survey")?.length > 0;
 
-  if (isAd) {
-    const videoPlayer = document.getElementById("video-stream");
-    videoPlayer.muted = true; // videoPlayer.volume = 0;
-    videoPlayer.currentTime = videoPlayer.duration - 0.1;
-    if (videoPlayer.paused) {
-      videoPlayer.play();
-    }
-
-    const skipButtons = Array.from(document.querySelectorAll(".ytp-ad-skip-button"));
-    skipButtons.find((skipButton) => skipButton.click());
-  }
-};
 
 chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
   if (
