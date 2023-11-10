@@ -24,27 +24,19 @@ chrome.runtime.onInstalled.addListener((details) => {
 
 const taimuRipu = async () => {
   await new Promise((resolve, _reject) => {
-    const videoContainer = document.getElementById("movie_player");
-
-    const setTimeoutHandler = () => {
+    const setTimeoutHandler = () => 
+    {
+      const videoContainer = document.getElementById("movie_player"); //Since the DOM can change - it is better to not cache the movie_player DOM element.
       const isAd = videoContainer?.classList.contains("ad-interrupting") || videoContainer?.classList.contains("ad-showing");
-      const skipLock = document.querySelector(".ytp-ad-preview-text")?.innerText;
-      const surveyLock = document.querySelector(".ytp-ad-survey")?.length > 0;
-
-      if (isAd && skipLock) {
-        const videoPlayer = document.getElementsByClassName("video-stream")[0];
+      //Those 2 if statement with "skiplock" and "surveylock" are wrong. They are good for normal ads, but not for static ads.
+      const videoPlayer = document.querySelector(".video-stream"); // document.querySelector(".video_stream") is faster in this case, then document.getElementsByClassName("video_stream")[0]
+      if (isAd && videoPlayer) { 
         videoPlayer.muted = true; // videoPlayer.volume = 0;
         videoPlayer.currentTime = videoPlayer.duration - 0.1;
         videoPlayer.paused && videoPlayer.play()
-        // CLICK ON THE SKIP AD BTN
         document.querySelector(".ytp-ad-skip-button")?.click();
         document.querySelector(".ytp-ad-skip-button-modern")?.click();
-      } else if (isAd && surveyLock) {
-        // CLICK ON THE SKIP SURVEY BTN
-        document.querySelector(".ytp-ad-skip-button")?.click();
-        document.querySelector(".ytp-ad-skip-button-modern")?.click();
-      }
-
+      } 
       resolve();
     };
 
