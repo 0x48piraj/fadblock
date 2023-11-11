@@ -1,0 +1,9 @@
+{
+  "staticAds": [".ytd-ad-slot-renderer", ".ytd-companion-slot-renderer", ".ytd-action-companion-ad-renderer",".ytd-watch-next-secondary-results-renderer.sparkles-light-cta", ".ytd-unlimited-offer-module-renderer", ".ytp-ad-overlay-image", ".ytp-ad-text-overlay", "div#root.style-scope.ytd-display-ad-renderer.yt-simple-endpoint", "div#sparkles-container.style-scope.ytd-promoted-sparkles-web-renderer", ".ytd-display-ad-renderer", ".ytd-statement-banner-renderer", ".ytd-in-feed-ad-layout-renderer", "div#player-ads.style-scope.ytd-watch-flexy", ".ytd-banner-promo-renderer", ".ytd-video-masthead-ad-v3-renderer", ".ytd-primetime-promo-renderer"
+    ],
+  "videoContainer": ".html5-video-player",
+  "videoPlayer": ".video-stream",
+  "previewText": ".ytp-ad-preview-text",
+  "skipButton": ".ytp-ad-skip-button",
+  "surveyButton": ".ytp-ad-survey"
+}
