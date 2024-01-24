@@ -1,41 +1,48 @@
 <p align="center">
-  <img src="https://github.com/0x48piraj/fadblock/assets/5800726/cf39ef9f-779b-43ca-93f7-ee0bb2a93323" alt="fadblock: A fast, lightweight, and undetectable YouTube Ads Blocker for Chrome, Opera and Firefox"></img>
+  <img src="https://github.com/0x48piraj/fadblock/assets/5800726/cf39ef9f-779b-43ca-93f7-ee0bb2a93323" alt="Fadblock Origin: A fast, lightweight, and undetectable YouTube Ads Blocker for Chrome, Opera and Firefox"></img>
   <br/>
-  <sub>A fast, lightweight, and undetectable YouTube Ads Blocker for Chrome, Opera and Firefox.</sub>
+  <sub>A fast, lightweight, and undetectable YouTube Ads Blocker for Chrome, Opera, and Firefox.</sub>
 </p>
 
-<h1 align="center">FadBlock: Friendly Adblock for Youtube™</h1>
+<h1 align="center">FadBlock Origin: Friendly Youtube™ Adblock</h1>
 
 
-This was posted over reddit a few months ago, [Apparently Ad Blockers are not allowed on Youtube. Is this a new thing they've implemented?](https://www.reddit.com/r/youtube/comments/13cfdbi/apparently_ad_blockers_are_not_allowed_on_youtube/?rdt=64832) and judging by all the recent comments and posts all over [r/youtube](https://www.reddit.com/r/youtube/), this change was just rolled out on a **larger scale**.
+This was posted over Reddit a few months ago, [Apparently Ad Blockers are not allowed on Youtube. Is this a new thing they've implemented?](https://www.reddit.com/r/youtube/comments/13cfdbi/apparently_ad_blockers_are_not_allowed_on_youtube/?rdt=64832) and judging by all the recent comments and posts all over [r/youtube](https://www.reddit.com/r/youtube/), this change was just rolled out on a **larger scale**.
 
-This blocker is designed to monitor advertisements, automatically seek the ads and skip them. It's important to note that this doesn't classify as traditional ad blocking, as the ad content is technically "loaded".
+This blocker is designed to monitor advertisements, automatically seek the ads, and skip them. It's important to note that this doesn't classify as traditional ad blocking, as the ad content is technically "loaded".
 
 Nevertheless, the extension's underlying logic enables it to fast-forward through the ad content to its conclusion. The entire process is optimized to occur within an extremely brief timeframe, typically **<=100 milliseconds**, ensuring a smooth and uninterrupted user experience.
 
 ### MAJOR ANNOUNCEMENT :mega::mega::mega:
 
-### I am no longer the owner of the extension. I sold it over a month ago, seems like it traded hands and now the current owner has added malicious code while keeping the extension as it is!
+### I am no longer the owner of the extension called "FadBlock". I handed the extension off over a month ago, seems like it traded hands a couple of times, and now the current owner has added malicious code while keeping the extension as it is!
 
-I am taking **immediate action** and will release a new version of the clean codebase for everyone to use.
+I am taking **immediate action** and will release a new version (under a new name called "**FadBlock Origin**") of the clean codebase for everyone to use.
 
-I am also thinking of pursuing legal action as it appears they have retained access to my PayPal and other support links!
+I am also thinking of pursuing legal action as it appears they have retained the PayPal and other support links!
 
-I have notified the few people who supported the extension and have sent them the new codebase as of now, for the rest, I will be updating the repository in a day or two.
+I have notified the few people who supported the extension and have sent them the new codebase _locally_, for the rest, the new version has been submitted to the web store and will hopefully be released in under 3-5 days.
 
-I made sure that the buyer was not going to use it for malicious purposes but it seems like there's a new owner in control which means it traded hands again. As of now, I would also ask all of the current users to **report that extension for abuse** so the Chrome team is notified while I recover the situation.
+As of now, I would also ask all of the current users to **report that extension for abuse** so the Chrome team is notified while I recover the situation.
 
-*Faster, smoother and better than ever!*
+#### -- RANT BELOW --
+
+> **Why?** Do all Chrome extensions that are traded end up being misused? It's heartbreaking.
+
+> I **thought** I took precautions to ensure the buyer wouldn't use it maliciously, but it appears there's a new owner in control, indicating that it exchanged hands again.
+> I transferred the extension because I believed it could benefit all users. Maintenance had become challenging, and I envisioned FadBlock evolving into a robust full-blown ChatGPT-powered powerhouse, capable of generating transcripts, language translation, and more, with significant potential…
+
+*Faster, smoother, and better than ever!*
 
 The upcoming version will utilize a custom `MutationObserver` with polyfill to ensure **compatibility with older browsers**. This was the initial reason for not implementing `MO` from the start.
 
-The next version will expand onto **YouTube Music** :tada:, will have a **"Blocked Ads" Counter** while including other niche features as well as proposed bugfixes :rocket:.
+The next version will expand onto **YouTube Music** :tada: and will have a **"Blocked Ads" Counter** while including other niche features as well as proposed bug fixes.
 
 As this project has demanded a substantial amount of time, the repository will transition to an _open-core model for ongoing maintenance and updates_.
 
-**Note:** Some people are getting confused about the new permissions as well as the access to `extensionpay.com`. The storage permission is for counting the "Blocked YouTube Ads" and ExtensionPay is a payment processor integrated with [Stripe](https://stripe.com/en-in) for obtaining a lifetime license after an initial free trial period (it's gonna stay free after as well but will ask for a contribution every now and then).
+**Note:** Some people are getting confused about the new permissions as well as the access to `extensionpay.com`. The storage permission is for counting the "Blocked YouTube Ads" and ExtensionPay is a payment processor integrated with [Stripe](https://stripe.com/en-in) for obtaining a lifetime license after an initial free trial period (it's gonna stay free after as well but will ask for a contribution now and then).
 
-> I genuinely hope you all can appreciate the immense amount of time and effort it requires to sustain a project like this all the while YouTube keeps changing the rules, trying to shut-out everything. All this coupled with working >80 hours/week on my own thing (not FadBlock). If you're not satisfied with the decision where you have to pay a one-time contribution as a gesture for "_job well done and keep at it_", you still have the option to manually roll back to version 1.3. I won't remove it; it just won't receive further updates. I believe that's a fair compromise.
+> I genuinely hope you all can appreciate the immense amount of time and effort it requires to sustain a project like this all the while YouTube keeps changing the rules, trying to shut out everything. All this coupled with working >80 hours/week on my own thing (not FadBlock Origin). If you're not satisfied with the decision where you have to pay a one-time contribution as a gesture for "_job well done and keep at it_", you still have the option to manually roll back to version 1.3. I won't remove it; it just won't receive further updates. I believe that's a fair compromise.
 
 ## Coverage
 
@@ -70,7 +77,7 @@ This extension effectively eliminates all categories of YouTube advertisements:
 
 **Category 3:** Ads displayed below the video description.
 
-> Starting on April 6th, 2023, the “Overlay ads” ad format will no longer appear on YouTube to help improve the viewer experience and shift engagement to higher performing ad formats on desktop and mobile devices. Overlay ads are a legacy ad format that only served on desktop and are disruptive for viewers.
+> Starting on April 6th, 2023, the “Overlay ads” ad format will no longer appear on YouTube to help improve the viewer experience and shift engagement to higher-performing ad formats on desktop and mobile devices. Overlay ads are a legacy ad format that is only served on desktops and are disruptive for viewers.
 
 **Category 4:** Skippable 5-second-must-be-watched video ads, which may be positioned at the video's start, midway, or at the end.
 
@@ -82,9 +89,9 @@ This extension effectively eliminates all categories of YouTube advertisements:
 
 1. **It is not working!**
 
-You will have to **disable other adblockers as they are getting detected**. It's not due to FadBlock as the technique it uses is completely different than other adblockers. It's hacky but it works and Google can't do jack _(for the most part)_.
+You will have to **disable other adblockers as they are getting detected**. It's not due to FadBlock Origin as the technique it uses is completely different than other adblockers. It's hacky but it works and Google can't do jack _(for the most part)_.
 
-Some of the extensions that does not and do work with fadblock are listed down below,
+Some of the extensions that do not and do work with FadBlock Origin are listed down below,
 
 | Name of the extension    | Getting detected |
 |--------------------------|------------------|
@@ -96,42 +103,38 @@ Some of the extensions that does not and do work with fadblock are listed down b
 | Brave in-built adblock   | ✔️               |
 | Firefox in-built adblock | ✔️               |
 
-> You can also add _youtube.com_ to the exception list for domains on other adblockers (uBlock Origin, AdBlock) and then download FadBlock to override regular adblock being prioritized on YouTube while the conventional adblocker will work across the remainder of the Internet.
+> You can also add _youtube.com_ to the exception list for domains on other adblockers (uBlock Origin, AdBlock) and then download FadBlock Origin to override regular Adblock being prioritized on YouTube while the conventional adblocker will work across the remainder of the Internet.
 
-**Note:** If you're still getting the YouTube's Adblock warning, look at your extensions, disable extensions one-by-one until you find your culprit. If you still can't find it, change your browser to Chrome (as it has no in-built adblocker) and test again. If it still doesn't work, then and only then create an [issue](https://github.com/0x48piraj/fadblock/issues).
+**Note:** If you're still getting YouTube's Adblock warning, look at your extensions, and disable extensions one by one until you find your culprit. If you still can't find it, change your browser to Chrome (as it has no built-in adblocker) and test again. If it still doesn't work, then and only then create an [issue](https://github.com/0x48piraj/fadblock/issues).
 
-2. **Chrome extension says "Read your browsing history"?**
-
-Prime example of Google being nonsensical, again. Firefox doesn't and they share the same code. (read in detail [here](https://stackoverflow.com/a/64063834))
-
-3. **Why there's no privacy policy?**
+2. **Why there's no privacy policy?**
 
 There’s no privacy policy as there’s no data collection at all, not even analytical data for error reporting. Everything happens locally. No remote connections are made, nada!
 
-4. **How do I use it for my phone?**
+3. **How do I use it for my phone?**
 
-Unfortunately there’s no app or anything. You cannot install Chrome extensions on the Chrome browser on Android, but several Chromium-based third-party browsers support extensions (e.g. brave browser).
+Unfortunately, there’s no app or anything. You cannot install Chrome extensions on the Chrome browser on Android, but several Chromium-based third-party browsers support extensions (e.g. Brave Browser).
 
-> Note: You will have to leave YouTube app and watch over a browser (not very elegant, sorry)
+> Note: You will have to leave the YouTube app and watch over a browser (not very elegant, sorry)
 
 
-## Install FadBlock to Opera, Edge, Brave and Safari
+## Install FadBlock Origin to Opera, Edge, Brave and Safari
 
-This section explains on how to install the extension utilizing the _developer mode_ as well as Chromium-based browsers,
+This section explains how to install the extension utilizing the _developer mode_ as well as Chromium-based browsers,
 
 <p align="center">
-  <img src="https://bashvlas.com/blog/install-chrome-extension-in-developer-mode/example.gif" alt="installing chrome extension in devmode"></img>
+  <img src="https://bashvlas.com/blog/install-chrome-extension-in-developer-mode/example.gif" alt="installing chrome extension in dev mode"></img>
 </p>
 
 ### Opera & Edge
 
-Go to the extensions manager page for Opera (`opera://extensions`) or Edge (`edge://extensions`), turn on **developer mode** and click on **Load Unpacked**.
+Go to the extensions manager page for Opera (`opera://extensions`) or Edge (`edge://extensions`), turn on **developer mode**, and click on **Load Unpacked**.
 
 ### Brave Browser
 
-You can visit Chrome Web Store and download the ~extension~.
+You can visit the Chrome Web Store and download the ~extension~.
 
-### Install over Safari on macOS
+### Install on Safari @ macOS
 
 1. Download the **Userscripts** from the [App Store](https://apps.apple.com/us/app/userscripts/id1463298887)
 
@@ -141,7 +144,7 @@ You can visit Chrome Web Store and download the ~extension~.
 
 ## Show your support
 
-* ~Think about making a tiny one-time contribution to keep enjoying FadBlock with extended support.~
+* Think about making a tiny one-time contribution to keep enjoying FadBlock Origin with extended support.
 * Star (⭐) this repository and consider following me on [GitHub](https://github.com/0x48piraj) if you're using the **free** version.
 
 
@@ -150,8 +153,8 @@ You can visit Chrome Web Store and download the ~extension~.
 This software is provided for educational purposes only and
 is provided "AS IS", without warranty of any kind, express or
 implied, including but not limited to the warranties of merchantability,
-fitness for a particular purpose and noninfringement. in no event shall the
-authors or copyright holders be liable for any claim, damages or other
+fitness for a particular purpose and non-infringement. In no event shall the
+authors or copyright holders be liable for any claim, damages, or other
 liability, whether in an action of contract, tort or otherwise, arising from,
 out of or in connection with the software or the use or other dealings in the
 software.
