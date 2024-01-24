@@ -4,12 +4,6 @@
   <sub>A fast, lightweight, and undetectable YouTube Ads Blocker for Chrome, Opera and Firefox.</sub>
 </p>
 
-<p align="center">
-	<a href="https://addons.mozilla.org/addon/fadblock/"><img src="https://user-images.githubusercontent.com/585534/107280546-7b9b2a00-6a26-11eb-8f9f-f95932f4bfec.png" alt="Get uBlock Origin for Firefox"></a>
-	<a href="https://chrome.google.com/webstore/detail/fadblock/mdadjjfmjhfcibgfhfjbaiiljpllkbfc"><img src="https://user-images.githubusercontent.com/585534/107280622-91a8ea80-6a26-11eb-8d07-77c548b28665.png" alt="Get uBlock Origin for Chromium"></a>
-	<a href="#opera--edge"><img src="https://user-images.githubusercontent.com/585534/107280692-ac7b5f00-6a26-11eb-85c7-088926504452.png" alt="Get uBlock Origin for Opera"></a>
-</p>
-
 <h1 align="center">FadBlock: Friendly Adblock for Youtube™</h1>
 
 
@@ -20,6 +14,16 @@ This blocker is designed to monitor advertisements, automatically seek the ads a
 Nevertheless, the extension's underlying logic enables it to fast-forward through the ad content to its conclusion. The entire process is optimized to occur within an extremely brief timeframe, typically **<=100 milliseconds**, ensuring a smooth and uninterrupted user experience.
 
 ### MAJOR ANNOUNCEMENT :mega::mega::mega:
+
+### I am no longer the owner of the extension. I sold it over a month ago, seems like it traded hands and now the current owner has added malicious code while keeping the extension as it is!
+
+I am taking **immediate action** and will release a new version of the clean codebase for everyone to use.
+
+I am also thinking of pursuing legal action as it appears they have retained access to my PayPal and other support links!
+
+I have notified the few people who supported the extension and have sent them the new codebase as of now, for the rest, I will be updating the repository in a day or two.
+
+I made sure that the buyer was not going to use it for malicious purposes but it seems like there's a new owner in control which means it traded hands again. As of now, I would also ask all of the current users to **report that extension for abuse** so the Chrome team is notified while I recover the situation.
 
 *Faster, smoother and better than ever!*
 
@@ -125,7 +129,7 @@ Go to the extensions manager page for Opera (`opera://extensions`) or Edge (`edg
 
 ### Brave Browser
 
-You can visit Chrome Web Store and download the [extension](https://chrome.google.com/webstore/detail/fadblock/mdadjjfmjhfcibgfhfjbaiiljpllkbfc).
+You can visit Chrome Web Store and download the ~extension~.
 
 ### Install over Safari on macOS
 
@@ -137,7 +141,7 @@ You can visit Chrome Web Store and download the [extension](https://chrome.googl
 
 ## Show your support
 
-* Think about making a tiny one-time contribution to keep enjoying FadBlock with extended support.
+* ~Think about making a tiny one-time contribution to keep enjoying FadBlock with extended support.~
 * Star (⭐) this repository and consider following me on [GitHub](https://github.com/0x48piraj) if you're using the **free** version.
 
 
