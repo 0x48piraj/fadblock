@@ -4,6 +4,12 @@
   <sub>A fast, lightweight, and undetectable YouTube Ads Blocker for Chrome, Opera, and Firefox.</sub>
 </p>
 
+<p align="center">
+	<a href="https://addons.mozilla.org/addon/fadblock/"><img src="https://user-images.githubusercontent.com/585534/107280546-7b9b2a00-6a26-11eb-8f9f-f95932f4bfec.png" alt="Get FadBlock Origin for Firefox"></a>
+	<a href="https://chromewebstore.google.com/detail/fadblock-origin-friendly/lmnhcklabcehiohmmeihcheoegomkghm"><img src="https://user-images.githubusercontent.com/585534/107280622-91a8ea80-6a26-11eb-8d07-77c548b28665.png" alt="Get FadBlock Origin for Chromium"></a>
+	<a href="#opera--edge"><img src="https://user-images.githubusercontent.com/585534/107280692-ac7b5f00-6a26-11eb-85c7-088926504452.png" alt="Get FadBlock Origin for Opera"></a>
+</p>
+
 <h1 align="center">FadBlock Origin: Friendly Youtube™ Adblock</h1>
 
 
@@ -132,7 +138,7 @@ Go to the extensions manager page for Opera (`opera://extensions`) or Edge (`edg
 
 ### Brave Browser
 
-You can visit the Chrome Web Store and download the ~extension~.
+You can visit the Chrome Web Store and download the [extension](https://chromewebstore.google.com/detail/fadblock-origin-friendly/lmnhcklabcehiohmmeihcheoegomkghm).
 
 ### Install on Safari @ macOS
 
