@@ -6,9 +6,9 @@ const taimuRipu = async () => {
       const isAd =
         videoContainer?.classList.contains("ad-interrupting") ||
         videoContainer?.classList.contains("ad-showing");
-      const skipLock = document.querySelector(
-        ".ytp-ad-preview-text-modern"
-      )?.innerText;
+      const skipLock =
+        document.querySelector(".ytp-ad-preview-text-modern")?.innerText ||
+        document.querySelector(".ytp-preview-ad__text")?.innerText;
       const surveyLock = document.querySelector(".ytp-ad-survey")?.length > 0;
 
       if (isAd && skipLock) {
