@@ -27,21 +27,25 @@ const taimuRipu = async () => {
     const videoContainer = document.getElementById("movie_player");
 
     const setTimeoutHandler = () => {
-      const isAd = videoContainer?.classList.contains("ad-interrupting") || videoContainer?.classList.contains("ad-showing");
-      const skipLock = document.querySelector(".ytp-ad-preview-text")?.innerText;
+      const isAd =
+        videoContainer?.classList.contains("ad-interrupting") ||
+        videoContainer?.classList.contains("ad-showing");
+      const skipLock = document.querySelector(
+        ".ytp-ad-preview-text-modern"
+      )?.innerText;
       const surveyLock = document.querySelector(".ytp-ad-survey")?.length > 0;
 
       if (isAd && skipLock) {
         const videoPlayer = document.getElementsByClassName("video-stream")[0];
         videoPlayer.muted = true; // videoPlayer.volume = 0;
         videoPlayer.currentTime = videoPlayer.duration - 0.1;
-        videoPlayer.paused && videoPlayer.play()
+        videoPlayer.paused && videoPlayer.play();
         // CLICK ON THE SKIP AD BTN
-        document.querySelector(".ytp-ad-skip-button")?.click();
+        document.querySelector(".ytp-skip-ad-button")?.click();
         document.querySelector(".ytp-ad-skip-button-modern")?.click();
       } else if (isAd && surveyLock) {
         // CLICK ON THE SKIP SURVEY BTN
-        document.querySelector(".ytp-ad-skip-button")?.click();
+        document.querySelector(".ytp-skip-ad-button")?.click();
         document.querySelector(".ytp-ad-skip-button-modern")?.click();
       }
 
