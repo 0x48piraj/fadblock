@@ -4,8 +4,8 @@
   "isAd": ".ad-interrupting",
   "videoContainer": "#movie_player",
   "videoPlayer": ".video-stream",
-  "previewText": ".ytp-preview-ad__text",
+  "previewText": ".ytp-ad-preview-text-modern",
   "skipButton": ".ytp-ad-skip-button",
-  "skipButtonAlt" : ".ytp-ad-skip-button-modern",
+  "skipButtonAlt": ".ytp-ad-skip-button-modern",
   "surveyButton": ".ytp-ad-survey"
 }
