@@ -5,6 +5,7 @@
   "videoContainer": "#movie_player",
   "videoPlayer": ".video-stream",
   "previewText": ".ytp-preview-ad",
+  "previewTextAlt": ".ytp-ad-preview-text-modern",
   "skipButton": ".ytp-skip-ad-button",
   "skipButtonAlt": ".ytp-ad-skip-button-modern",
   "surveyButton": ".ytp-ad-survey"
