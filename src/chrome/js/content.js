@@ -1,25 +1,16 @@
-const taimuRipu = async () => {
+const skipAd = async () => {
   await new Promise((resolve, _reject) => {
-    const videoContainer = document.getElementById("movie_player");
-
     const setTimeoutHandler = () => {
-      const isAd = videoContainer?.classList.contains("ad-interrupting") || videoContainer?.classList.contains("ad-showing");
-      const skipLock = document.querySelector(".ytp-ad-preview-text")?.innerText;
-      const surveyLock = document.querySelector(".ytp-ad-survey")?.length > 0;
+        const isAd = document.querySelector("[class*=ytp-ad]") != null;
 
-      if (isAd && skipLock) {
-        const videoPlayer = document.getElementsByClassName("video-stream")[0];
-        videoPlayer.muted = true; // videoPlayer.volume = 0;
-        videoPlayer.currentTime = videoPlayer.duration - 0.1;
-        videoPlayer.paused && videoPlayer.play()
-        // CLICK ON THE SKIP AD BTN
-        document.querySelector(".ytp-ad-skip-button")?.click();
-        document.querySelector(".ytp-ad-skip-button-modern")?.click();
-      } else if (isAd && surveyLock) {
-        // CLICK ON THE SKIP SURVEY BTN
-        document.querySelector(".ytp-ad-skip-button")?.click();
-        document.querySelector(".ytp-ad-skip-button-modern")?.click();
-      }
+        if (isAd) {
+            const videoPlayer = document.getElementsByClassName("video-stream")[0];
+            videoPlayer.muted = true;
+            videoPlayer.currentTime = videoPlayer.duration - 0.1;
+            videoPlayer.paused && videoPlayer.play()
+            // CLICK ON THE SKIP AD BTN
+            document.querySelector("button[class*=skip]")?.click();
+        }
 
       const staticAds = [".ytd-companion-slot-renderer", ".ytd-action-companion-ad-renderer", // in-feed video ads
                            ".ytd-watch-next-secondary-results-renderer.sparkles-light-cta", ".ytd-unlimited-offer-module-renderer", // similar components
@@ -30,8 +21,10 @@ const taimuRipu = async () => {
                            ".ytd-banner-promo-renderer", ".ytd-video-masthead-ad-v3-renderer", ".ytd-primetime-promo-renderer" // subscribe for premium & youtube tv ads
                           ];
 
-      staticAds.forEach((ad) => {
-          document.hideElementsBySelector(ad);
+      staticAds.forEach((ads) => {
+          [...document.querySelectorAll(ads)].forEach(
+              (el) => (el.style.display = "none")
+          );
       });
 
       resolve();
@@ -41,17 +34,12 @@ const taimuRipu = async () => {
     setTimeout(setTimeoutHandler, 100);
   });
 
-  taimuRipu();
+  skipAd();
 };
 
 
 const init = async () => {
-  Document.prototype.hideElementsBySelector = (selector) =>
-    [...document.querySelectorAll(selector)].forEach(
-      (el) => (el.style.display = "none")
-    );
-
-    taimuRipu();
+    skipAd();
 };
 
 init();

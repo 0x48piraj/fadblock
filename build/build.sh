@@ -17,7 +17,7 @@ GEN_FILES="$JS_FILES $DOC_FILES $IMG_FILES"
 CH_FILES="$GEN_FILES temp-chrome-manifest.json ../src/updates/updates.xml"
 FF_FILES="$GEN_FILES temp-ff-manifest.json ../src/updates/updates.json ../src/chrome/assets/logo.png"
 
-NAME="output/fadblock"
+NAME="output/youtubeadblocker"
 
 # Remove existing files
 rm -f $NAME.crx $NAME.xpi
